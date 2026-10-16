@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+#root {
+  padding: 2rem;
+  text-align: center;
+}
+@keyframes float {
+  0%   { transform: translateY(1px); }
+  20%  { transform: translatex(3px); }
+  30%  { transform: translatex(4px); }
+  50%  { transform: translateY(6px); }
+  70%  { transform: translatex(4px); }
+  80%  { transform: translatex(3px); }
+  100% { transform: translateY(1px); }
+}
+
+.floating-img {
+  animation: float 10s ease-in-out infinite;
+}
